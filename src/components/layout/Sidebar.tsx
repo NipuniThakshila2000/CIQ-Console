@@ -20,7 +20,7 @@ export function Sidebar({ activePage, onNavigate }: { activePage: PageKey; onNav
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center border border-ciq-cyan/50 bg-ciq-cyan/10 font-mono text-sm font-bold text-ciq-cyan">CIQ</div>
           <div>
-            <div className="text-sm font-semibold text-text-primary">CIQ Console</div>
+            <div className="text-sm font-semibold text-text-primary">GR - 17</div>
             <div className="text-xs text-text-muted">{exercise.workspaceLabel}</div>
           </div>
         </div>
