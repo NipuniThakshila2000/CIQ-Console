@@ -5,7 +5,7 @@ export const exercise = {
   sessionId: "CIQ-SIM-204-77A",
   operatorHash: "OPR-92F7A1C",
   timestamp: "2026-05-27 09:42 LKT",
-  workspaceLabel: "Human-State Simulation Layer",
+  workspaceLabel: "Strategic Simulation",
 };
 
 export const navItems: Array<{ key: PageKey; label: string }> = [
