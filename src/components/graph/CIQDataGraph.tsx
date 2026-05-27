@@ -64,7 +64,13 @@ export function CIQDataGraph() {
     ["stress", "report"],
     ["balance", "report"],
     ["report", "recommendation"],
-  ].map(([source, target]) => ({ id: `${source}-${target}`, source, target }));
+  ].map(([source, target]) => ({
+    id: `${source}-${target}`,
+    source,
+    target,
+    animated: true,
+    style: { stroke: "#36A9E1", strokeWidth: 1.7 },
+  }));
   const [selected, setSelected] = useState<Node | null>(nodes[4]);
 
   return (

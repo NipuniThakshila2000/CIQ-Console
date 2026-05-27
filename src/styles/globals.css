@@ -76,3 +76,9 @@ textarea {
   stroke: #496274;
   stroke-width: 1.5;
 }
+
+.react-flow__edge.animated .react-flow__edge-path {
+  stroke-dasharray: 6 8;
+  animation-duration: 1.6s;
+  filter: drop-shadow(0 0 4px rgba(54, 169, 225, 0.45));
+}
