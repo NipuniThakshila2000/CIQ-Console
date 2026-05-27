@@ -6,7 +6,7 @@ export function TerminalMessage({ message }: { message: { role: string; time: st
   const tone = message.status === "warning" ? "amber" : message.status === "synced" ? "cyan" : "green";
   const Icon = isOperator ? UserRound : Bot;
   return (
-    <div className="border border-border-soft bg-panel-soft p-3">
+    <div className="hover-lift border border-border-soft bg-panel-soft p-3">
       <div className="mb-2 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2 text-sm font-semibold">
           <Icon size={15} className={isOperator ? "text-ciq-blue" : "text-ciq-cyan"} />

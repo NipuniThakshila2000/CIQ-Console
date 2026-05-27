@@ -4,7 +4,7 @@ import { RiskPill } from "../shared/RiskPill";
 export function DecisionInspector() {
   const node = decisionNodes[2];
   return (
-    <div className="absolute right-4 top-4 w-64 border border-border-strong bg-[#111820]/95 p-3 shadow-2xl">
+    <div className="hover-lift absolute right-4 top-4 w-64 border border-border-strong bg-[#111820]/95 p-3 shadow-2xl">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-sm font-semibold">{node.label}</h3>
         <RiskPill tone="amber">Watch</RiskPill>

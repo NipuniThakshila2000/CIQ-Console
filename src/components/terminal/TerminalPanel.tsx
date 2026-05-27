@@ -14,14 +14,14 @@ export function TerminalPanel() {
           <TerminalMessage key={`${message.time}-${message.title}`} message={message} />
         ))}
       </div>
-      <div className="mt-4 border border-border-soft bg-[#0f1720] p-2">
+      <div className="hover-lift mt-4 border border-border-soft bg-[#0f1720] p-2">
         <div className="mb-2 flex items-center gap-2 text-xs text-text-muted">
           <Sparkles size={13} className="text-ciq-cyan" />
           Ask the operator a readiness question or attach this window to a decision node.
         </div>
         <div className="flex gap-2">
-          <input className="min-w-0 flex-1 border border-border-soft bg-panel px-3 py-2 text-sm text-text-primary outline-none focus:border-ciq-blue" placeholder="Generate readiness interpretation..." />
-          <button className="inline-flex items-center gap-2 bg-ciq-blue px-3 py-2 text-sm font-semibold text-white">
+          <input className="min-w-0 flex-1 border border-border-soft bg-panel px-3 py-2 text-sm text-text-primary outline-none transition focus:border-ciq-blue focus:shadow-[0_0_0_1px_rgba(47,128,237,0.35)]" placeholder="Generate readiness interpretation..." />
+          <button className="hover-lift inline-flex items-center gap-2 bg-ciq-blue px-3 py-2 text-sm font-semibold text-white">
             <Send size={15} />
             Send
           </button>
