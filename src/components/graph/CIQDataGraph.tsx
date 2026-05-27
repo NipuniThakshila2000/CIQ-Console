@@ -34,7 +34,13 @@ export function CIQDataGraph() {
       id: String(id),
       position: { x: Number(x), y: Number(y) },
       data: { label, type },
-      style: { borderColor: colorByType[String(type)], background: `${colorByType[String(type)]}22`, width: 160 },
+      style: {
+        borderColor: colorByType[String(type)],
+        background: `linear-gradient(180deg, ${colorByType[String(type)]}33, #162331 72%)`,
+        color: "#FFFFFF",
+        fontWeight: 700,
+        width: 160,
+      },
     })),
     []
   );
