@@ -19,8 +19,8 @@ export function Sidebar({ activePage, onNavigate }: { activePage: PageKey; onNav
     <aside className="hidden w-72 shrink-0 border-r border-border-soft bg-[#0d141c] lg:flex lg:flex-col">
       <div className="border-b border-border-soft p-5">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center overflow-hidden border border-border-soft bg-white">
-            <img src={logo} alt="GR - 17 logo" className="h-full w-full object-cover" />
+          <div className="flex h-10 w-10 items-center justify-center overflow-hidden border border-border-soft bg-transparent p-1">
+            <img src={logo} alt="GR - 17 logo" className="h-full w-full object-contain" />
           </div>
           <div>
             <div className="text-sm font-semibold text-text-primary">GR - 17</div>
