@@ -16,7 +16,7 @@ export function Interview() {
           <h2 className="mt-3 text-xl font-semibold">{current.prompt}</h2>
           <div className="mt-6 grid grid-cols-7 gap-2">
             {Array.from({ length: 7 }, (_, i) => (
-              <button key={i} className={`border py-3 text-sm ${i === 4 ? "border-ciq-blue bg-ciq-blue/20 text-text-primary" : "border-border-soft bg-panel text-text-secondary"}`}>{i + 1}</button>
+              <button key={i} className={`hover-lift border py-3 text-sm ${i === 4 ? "border-ciq-blue bg-ciq-blue/20 text-text-primary" : "border-border-soft bg-panel text-text-secondary"}`}>{i + 1}</button>
             ))}
           </div>
         </div>
@@ -38,7 +38,7 @@ export function Interview() {
 
 function Status({ icon: Icon, label, value }: { icon: React.ElementType; label: string; value: string }) {
   return (
-    <div className="panel-soft p-3">
+    <div className="panel-soft hover-lift p-3">
       <Icon size={18} className="text-ciq-cyan" />
       <p className="mt-2 text-[11px] uppercase text-text-muted">{label}</p>
       <p className="text-sm font-semibold">{value}</p>

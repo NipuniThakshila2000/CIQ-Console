@@ -33,7 +33,7 @@ export function ReadinessReport() {
       <ReportSection title="Decision-Node Correlation">
         <div className="grid gap-3 md:grid-cols-3">
           {["Decision Node 01", "Decision Node 03", "Decision Node 04"].map((node, index) => (
-            <div key={node} className="panel p-4">
+            <div key={node} className="panel hover-lift p-4">
               <h4 className="text-sm font-semibold">{node}</h4>
               <p className="mt-3 text-xs text-text-muted">Simulation Context</p>
               <p className="text-sm text-text-secondary">Time-compressed training event with stacked scenario cues.</p>

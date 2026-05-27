@@ -15,7 +15,7 @@ export function ModelLibrary() {
       </div>
       <div className="grid gap-3 lg:grid-cols-5">
         {models.map((model) => (
-          <div key={model[0]} className="panel p-4">
+          <div key={model[0]} className="panel hover-lift p-4">
             <BrainCircuit className="mb-3 text-ciq-cyan" size={20} />
             <h3 className="text-sm font-semibold">{model[0]}</h3>
             <p className="mt-2 text-xs leading-5 text-text-secondary">{model[1]}</p>

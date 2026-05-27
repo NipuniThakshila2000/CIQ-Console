@@ -53,6 +53,61 @@ textarea {
   border: 1px solid var(--border-soft);
 }
 
+.hover-lift {
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  border-color: rgba(54, 169, 225, 0.7);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(54, 169, 225, 0.12);
+}
+
+.hover-lift:active {
+  transform: translateY(0);
+}
+
+.nav-tab {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.nav-tab::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  background: var(--cyan);
+  opacity: 0;
+  transform: scaleY(0.35);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.nav-tab:hover {
+  transform: translateX(3px);
+  border-color: rgba(54, 169, 225, 0.55);
+  background: rgba(54, 169, 225, 0.08);
+  color: var(--text-primary);
+}
+
+.nav-tab:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
 .technical-grid {
   background-image:
     linear-gradient(rgba(73, 98, 116, 0.18) 1px, transparent 1px),

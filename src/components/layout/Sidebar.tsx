@@ -38,7 +38,7 @@ export function Sidebar({ activePage, onNavigate }: { activePage: PageKey; onNav
               <button
                 key={item.key}
                 onClick={() => onNavigate(item.key)}
-                className={`flex w-full items-center gap-3 border px-3 py-2 text-left text-sm transition ${
+                className={`nav-tab flex w-full items-center gap-3 border px-3 py-2 text-left text-sm ${
                   active ? "border-ciq-blue/50 bg-ciq-blue/10 text-text-primary" : "border-transparent text-text-secondary hover:border-border-soft hover:bg-panel"
                 }`}
               >

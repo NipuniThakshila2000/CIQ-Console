@@ -80,7 +80,7 @@ export function CIQDataGraph() {
           <div className="flex items-center gap-2 text-sm font-semibold"><Waypoints size={16} className="text-ciq-cyan" /> CIQ Ontology Graph</div>
           <div className="flex flex-wrap gap-2 text-xs">
             {["Layout", "Filter", "Show biometrics", "Show events", "Show report path"].map((label) => (
-              <button key={label} className="inline-flex items-center gap-1 border border-border-soft bg-panel-soft px-2 py-1 text-text-secondary"><SlidersHorizontal size={12} /> {label}</button>
+              <button key={label} className="hover-lift inline-flex items-center gap-1 border border-border-soft bg-panel-soft px-2 py-1 text-text-secondary"><SlidersHorizontal size={12} /> {label}</button>
             ))}
           </div>
         </div>
