@@ -5,7 +5,7 @@ import { DecisionInspector } from "./DecisionInspector";
 
 export function SimulationCanvas() {
   return (
-    <section className="panel flex min-h-[620px] flex-col p-4">
+    <section className="panel flex min-h-[540px] flex-col p-4">
       <SectionHeader title="Simulation Workspace" eyebrow="Synthetic training scenario" />
       <div className="technical-grid relative flex-1 overflow-hidden border border-border-soft bg-[#0b1118]">
         <div className="absolute left-[8%] top-[15%] h-32 w-44 border border-ciq-blue/40 bg-ciq-blue/10" />

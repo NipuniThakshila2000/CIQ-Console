@@ -6,7 +6,7 @@ import { TerminalMessage } from "./TerminalMessage";
 
 export function TerminalPanel() {
   return (
-    <section className="panel flex min-h-[620px] flex-col p-4">
+    <section className="panel flex min-h-[540px] flex-col p-4">
       <SectionHeader title="CIQ AI Terminal" eyebrow="Readiness interview active" />
       <BiometricStatus />
       <div className="mt-4 flex-1 space-y-3 overflow-auto">
