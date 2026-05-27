@@ -24,11 +24,11 @@ export function Dashboard({ mode }: { mode: PageKey }) {
 
   return (
     <div className="space-y-4">
+      <TelemetryStrip />
       <div className="grid gap-4 xl:grid-cols-[48fr_52fr]">
         <TerminalPanel />
         <SimulationCanvas />
       </div>
-      <TelemetryStrip />
     </div>
   );
 }
