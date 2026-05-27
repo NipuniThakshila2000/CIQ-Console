@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #111820;
+  --bg-panel: #182431;
+  --bg-panel-soft: #203244;
+  --bg-elevated: #24384a;
+  --border-soft: #31465a;
+  --border-strong: #496274;
+  --text-primary: #e6eef5;
+  --text-secondary: #aab7c4;
+  --text-muted: #6f7f8f;
+  --green: #18a76b;
+  --cyan: #36a9e1;
+  --blue: #2f80ed;
+  --amber: #d79b32;
+  --red: #d94c4c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+}
+
+.panel-soft {
+  background: var(--bg-panel-soft);
+  border: 1px solid var(--border-soft);
+}
+
+.technical-grid {
+  background-image:
+    linear-gradient(rgba(73, 98, 116, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(73, 98, 116, 0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.react-flow__node {
+  border-radius: 6px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-panel-soft);
+  color: var(--text-primary);
+  font-size: 12px;
+}
+
+.react-flow__handle {
+  background: var(--cyan);
+}
+
+.react-flow__edge-path {
+  stroke: #496274;
+  stroke-width: 1.5;
+}
